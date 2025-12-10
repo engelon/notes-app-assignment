@@ -20,7 +20,7 @@ GET /notes
 PUT /notes/:id
 DELETE /notes/:id
 Token must be included via:
-Authorization: Bearer TOKEN_HERE
+
 A SQLite database file (notes.db) is created automatically.
 
 ### Backend Setup

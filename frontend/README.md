@@ -24,10 +24,32 @@ The app communicates with the backend API using JWT authentication.
 
 ### 1. Install dependencies
 
-```bash
 cd frontend
 npm install
 
 
 ### 2. Start the Development Server
+
+npm run dev
+
+Vite will start at: http://localhost:5173
+
+
+
+## API INTEGRATION 
+The frontend communicates with: http://localhost:4000
+
+### EndPoints used:
+POST /auth/signup
+POST /auth/login
+GET /notes
+POST /notes
+PUT /notes/:id
+DELETE /notes/:id
+JWT is stored in localStorage and automatically added to requests via Axios.
+
+## Testing
+The project includes basic unit tests for React components using Vitest. Tests verify that UI components render correctly and handle simple states. To run all tests:
+
+npm test
 

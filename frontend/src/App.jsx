@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage.jsx";
 import SignupPage from "./pages/SignupPage.jsx";
 import NotesPage from "./pages/NotesPage.jsx";
 import { useAuth } from "./context/AuthContext.jsx";
+import bgTile from "/bgimg.jpg"; 
 
 // Wrapper for protecting routes
 function PrivateRoute({ children }) {
@@ -16,8 +17,11 @@ export default function App() {
   const { user, logout } = useAuth();
 
   return (
-    <div style={{ maxWidth: "800px", margin: "0 auto", padding: "1rem" }}>
-      {/* Header with navigation */}
+    <div style={{ maxWidth: "800px", margin: "0 auto", padding: "1rem" , minHeight: "100vh",
+        backgroundImage: `url(${bgTile})`,
+        backgroundRepeat: "repeat",
+        backgroundSize: "auto", }}>
+    
       <header
         style={{
           display: "flex",
@@ -25,8 +29,6 @@ export default function App() {
           marginBottom: "1rem",
         }}
       >
-        <h1>Notes App</h1>
-
         <nav>
           {user ? (
             <>
@@ -35,10 +37,7 @@ export default function App() {
             </>
           ) : (
             <>
-              <Link to="/login" style={{ marginRight: "1rem" }}>
-                Login
-              </Link>
-              <Link to="/signup">Signup</Link>
+              
             </>
           )}
         </nav>

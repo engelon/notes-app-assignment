@@ -1,20 +1,27 @@
 const express = require("express");
 const router = express.Router();
 
-router.post("/", (req, res) => {
-  res.status(501).json({ message: "Not implemented" });
-});
+const authMiddleware = require("../middleware/authMiddleware");
+const {
+  createNoteHandler,
+  getNotesHandler,
+  updateNoteHandler,
+  deleteNoteHandler,
+} = require("../controllers/noteController");
 
-router.get("/", (req, res) => {
-  res.status(501).json({ message: "Not implemented" });
-});
+// Protect all /notes routes
+router.use(authMiddleware);
 
-router.put("/:id", (req, res) => {
-  res.status(501).json({ message: "Not implemented" });
-});
+// POST /notes
+router.post("/", createNoteHandler);
 
-router.delete("/:id", (req, res) => {
-  res.status(501).json({ message: "Not implemented" });
-});
+// GET /notes
+router.get("/", getNotesHandler);
+
+// PUT /notes/:id
+router.put("/:id", updateNoteHandler);
+
+// DELETE /notes/:id
+router.delete("/:id", deleteNoteHandler);
 
 module.exports = router;

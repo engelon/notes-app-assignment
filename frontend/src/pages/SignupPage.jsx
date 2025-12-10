@@ -61,8 +61,8 @@ export default function SignupPage() {
           src="/bgimg.jpg"
           alt="App icon"
           style={{
-            width: "64px",
-            height: "64px",
+            width: "128px",
+            height: "128px",
             marginBottom: "0.75rem",
           }}
         />

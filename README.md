@@ -25,14 +25,17 @@ A SQLite database file (notes.db) is created automatically.
 
 ### Backend Setup
 Navigate into the backend folder:
+
 cd backend
 npm install
-Create a .env file:
+
+### Create a .env file:
 PORT=4000
 JWT_SECRET=your_secret_here
 DATABASE_FILE=./notes.db
 Run the server in development:
 npm run dev
+
 Server will start at:
 http://localhost:4000
 

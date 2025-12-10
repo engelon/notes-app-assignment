@@ -1,0 +1,20 @@
+{
+  "name": "notes-app-assignment",
+  "version": "1.0.0",
+  "description": "Coding assignment for StealthCompany",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engelon/notes-app-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/engelon/notes-app-assignment/issues"
+  },
+  "homepage": "https://github.com/engelon/notes-app-assignment#readme"
+}

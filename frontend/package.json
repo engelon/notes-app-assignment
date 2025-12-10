@@ -1,0 +1,24 @@
+{
+  "name": "notes-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "axios": "^x.x.x",
+    "react": "^18.x.x",
+    "react-dom": "^18.x.x",
+    "react-router-dom": "^6.x.x"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.x.x",
+    "@testing-library/react": "^14.x.x",
+    "@testing-library/user-event": "^14.x.x",
+    "@vitejs/plugin-react": "^4.x.x",
+    "vitest": "^1.x.x",
+    "vite": "^6.x.x"
+  }
+}

@@ -1,12 +1,11 @@
 const express = require("express");
 const router = express.Router();
+const { signup, login } = require("../controllers/authController");
 
-router.post("/signup", (req, res) => {
-  res.status(501).json({ message: "Not implemented" });
-});
+// POST /auth/signup
+router.post("/signup", signup);
 
-router.post("/login", (req, res) => {
-  res.status(501).json({ message: "Not implemented" });
-});
+// POST /auth/login
+router.post("/login", login);
 
 module.exports = router;
